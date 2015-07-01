@@ -1,0 +1,20 @@
+{
+  "name": "rheinschafe/rs_etracker",
+  "type": "typo3-cms-extension",
+  "description": "Etracker integration",
+  "homepage": "https://www.rheinschafe.de/",
+  "license": ["GPL-2.0+"],
+  "keywords": [
+    "TYPO3 CMS",
+    "etracker",
+    "statistics"
+  ],
+  "support": {
+    "issues": "https://github.com/Rheinschafe/TYPO3-Extension-rs_etracker/issues"
+  },
+  "version": "1.0.0",
+  "require": {
+    "php": ">=5.3.7",
+    "typo3/cms-core": ">=6.0,<6.3"
+  }
+}
