@@ -5,3 +5,39 @@
 ##### $$ TypoScript Template Site $$ #########
 ##### $$$$$$$$$ Setup $$$$$$$$$$ #############
 ##############################################
+
+plugin.tx_rsetracker {
+
+	settings {
+
+		securityCode = {$plugin.tx_rsetracker.securityCode}
+
+		area = {$plugin.tx_rsetracker.area}
+		areaStdWrap {
+		}
+
+		pageName = {$plugin.tx_rsetracker.pageName}
+		pageNamePrefix = {$plugin.tx_rsetracker.pageNamePrefix}
+		pageNamePrefixGlue = {$plugin.tx_rsetracker.pageNamePrefixGlue}
+		prefixDomainAndLanguageKey = {$plugin.tx_rsetracker.prefixDomainAndLanguageKey}
+		defaultLanguageKey = {$plugin.tx_rsetracker.defaultLanguageKey}
+		pageNameStdWrap {
+		}
+
+		rootPageId = {$plugin.tx_rsetracker.rootPageId}
+
+		enableUTF8DecodeFix = {$plugin.tx_rsetracker.enableUTF8DecodeFix}
+
+	}
+
+}
+
+plugin.tx_rsetracker_code = USER
+plugin.tx_rsetracker_code {
+	userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+	vendorName = Rheinschafe
+	extensionName = RsEtracker
+	pluginName = Code
+}
+
+page.831551 < plugin.tx_rsetracker_code

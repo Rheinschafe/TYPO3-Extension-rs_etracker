@@ -5,3 +5,34 @@
 ##### $$ TypoScript Template Site $$ #########
 ##### $$$$$$$$$ Constants $$$$$$$$$$ #########
 ##############################################
+
+plugin.tx_rsetracker {
+
+	# cat=plugin.rs_etracker; type=string; label= Securitycode: Your personal Securitycode for identification.
+	securityCode =
+
+	# cat=plugin.rs_etracker; type=string; label= Area: Name of the Area.
+	area =
+
+	# cat=plugin.rs_etracker; type=string; label= PageName: Hard coded page name to use.
+	pageName =
+
+	# cat=plugin.rs_etracker; type=string; label= PageNamePrefix: Prefix for the page name.
+	pageNamePrefix =
+
+	# cat=plugin.rs_etracker; type=string; label= PageNamePrefixGlue: Splitchar for PageNamePrefix & PageName.
+	pageNamePrefixGlue = :
+
+	#cat=plugin.rs_etracker; type=boolean; label= PrefixDomainAndLanguageKey: Prefix pagename with domain & iso languagecode (useful for multidomain & multilanguage sites).
+	prefixDomainAndLanguageKey = 0
+
+	# cat=plugin.rs_etracker; type=string; label= DefaultLanguageKey: Default language key to use.
+	defaultLanguageKey = en
+
+	#cat=plugin.rs_etracker; type=int; label= RootPageUid: Uid of the Rootpage.
+	rootPageId =
+
+	#cat=plugin.rs_etracker; type=boolean; label= EnableUTF8DecodeFix: Decode all values through utf8_decode before transmit them to etracker.
+	enableUTF8DecodeFix = 0
+
+}
