@@ -19,8 +19,14 @@ if (!defined('TYPO3_MODE')) {
 }
 
 // configure etracker code plugin
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-	'Rheinschafe.RsEtracker',
-	'code',
-	array('Etracker' => 'code')
+$extbaseEtrackerCodePluginConfiguration = array(
+	'controllers' => array(
+		'Etracker' => array(
+			'actions' => array(
+				'code'
+			)
+		)
+	)
 );
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['extbase']['extensions']['RsEtracker']['plugins']['Code'] = $extbaseEtrackerCodePluginConfiguration;
+unset($extbaseEtrackerCodePluginConfiguration);
